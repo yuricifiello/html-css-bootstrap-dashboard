@@ -31,6 +31,21 @@
             id="navbarToggleExternalContent"
             data-bs-theme="dark"
           ></div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -53,9 +68,9 @@
       <h1>Nuovo libro</h1>
 
       <div class="row mt-4">
-        <div class="col">
+        <div class="col 12 col-lg-6">
           <label for="formGroupExampleInput" class="form-label"
-            >Nome Autore New</label
+            >Nome Autore</label
           >
           <input
             type="text"
@@ -64,7 +79,7 @@
             aria-label="Inserisci il nome dell'autore"
           />
         </div>
-        <div class="col">
+        <div class="col 12 col-lg-6">
           <label for="formGroupExampleInput" class="form-label"
             >Cognome Autore</label
           >
@@ -77,7 +92,7 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col">
+        <div class="col-12">
           <label for="formGroupExampleInput" class="form-label">Titolo</label>
           <input
             type="text"
@@ -86,16 +101,17 @@
             aria-label="Inserisci il titolo del libro"
           />
         </div>
+        <div id="versionTitle" class="form-text">Titolo versione italiana</div>
       </div>
 
       <div class="row mt-4">
-        <div class="col">
+        <div class="col-12 col-lg-4">
           <label for="inputType" class="form-label">Genere</label>
           <select id="inputType" class="form-select">
             <option selected>Scegli il genere</option>
           </select>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-4">
           <label for="formGroupExampleInput" class="form-label"
             >Anno di pubblicazione</label
           >
@@ -107,7 +123,7 @@
           />
         </div>
 
-        <div class="col">
+        <div class="col-12 col-lg-4">
           <label for="formGroupExampleInput" class="form-label">ISBN#</label>
           <input
             type="text"
@@ -116,40 +132,42 @@
             aria-label="Inserisci il codice ISBN#"
           />
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="border mt-5"></div>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="border mt-5"></div>
         </div>
-        <div class="row">
-          <div class="col mt-4">
-            <label for="exampleFormControlNote" class="form-label">Note</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlNote"
-              placeholder="Inserisci eventuali note sul libro"
-              rows="3"
-            ></textarea>
+      </div>
+      <div class="row">
+        <div class="col mt-4">
+          <label for="exampleFormControlNote" class="form-label">Note</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlNote"
+            placeholder="Inserisci eventuali note sul libro"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="flexCheckDefault"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Disponibile anche in digitale
+            </label>
           </div>
         </div>
         <div class="row mt-4">
           <div class="col">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="flexCheckDefault"
-              />
-              <label class="form-check-label" for="flexCheckDefault">
-                Disponibile anche in digitale
-              </label>
-            </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col">
-              <button class="btn btn-primary" type="submit">Button</button>
-            </div>
+            <button class="btn btn-primary" type="submit">
+              Aggiungi libro
+            </button>
           </div>
         </div>
       </div>
